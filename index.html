@@ -2,11 +2,11 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Photo Albums</title>
+  <title>Photo Albums (List View)</title>
   <style>
     body {
       margin: 0;
-      background-color: #007AFF; /* iOS System Blue */
+      background-color: transparent; /* Transparent background */
       display: flex;
       justify-content: center;
       align-items: center;
@@ -18,22 +18,15 @@
       width: 90vw;
       height: 90vh;
       border-radius: 12px;
-      background-color: white;
+      background-color: transparent; /* Transparent inside iframe container */
       box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-    }
-
-    /* Just in case content were visible inside the iframe (won't apply to Google Drive) */
-    iframe::content * {
-      color: white !important;
-      font-weight: bold !important;
     }
   </style>
 </head>
 <body>
   <iframe
-    src="https://drive.google.com/embeddedfolderview?id=1i1_-rluONctR78PiQf_zx43aZgAT4j4N#grid"
+    src="https://drive.google.com/embeddedfolderview?id=1i1_-rluONctR78PiQf_zx43aZgAT4j4N#list"
     allowfullscreen
   ></iframe>
 </body>
 </html>
-
